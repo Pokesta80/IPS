@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remove Style Attribute</title>
+    <script>
+        function removeStyleAttribute() {
+            // Access the parent document
+            var parentDocument = window.parent.document;
+            // Select the element with ID 'formCode'
+            var element = parentDocument.querySelector('#formCode');
+            // Remove the 'style' attribute if the element exists
+            if (element) {
+                element.removeAttribute('style');
+            } else {
+                console.log('Element with ID #formCode not found.');
+            }
+        }
+    </script>
+</head>
+<body>
+    <button onclick="removeStyleAttribute()">Enable Form Code</button>
+</body>
+</html>
